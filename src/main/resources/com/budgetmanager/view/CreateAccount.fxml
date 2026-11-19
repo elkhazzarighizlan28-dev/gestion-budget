@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.PasswordField?>
+
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" fx:controller="com.budgetmanager.controller.CreateAccountController" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #172554;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+
+    <VBox alignment="CENTER"
+          layoutX="290.0"
+          layoutY="45.0"
+          prefHeight="560.0"
+          prefWidth="420.0"
+          spacing="15.0"
+          style="-fx-background-color: white; -fx-background-radius: 20; -fx-padding: 35;"
+          AnchorPane.bottomAnchor="45.0"
+          AnchorPane.leftAnchor="290.0"
+          AnchorPane.rightAnchor="290.0"
+          AnchorPane.topAnchor="45.0">
+
+        <children>
+
+            <Label text="Create Account"
+                   style="-fx-font-size: 28; -fx-font-weight: BOLD; -fx-text-fill: #172554;"/>
+
+            <Label text="Start managing your money today"
+                   style="-fx-font-size: 13; -fx-text-fill: #64748B;"/>
+
+            <Label text="Full Name"
+                   style="-fx-font-size: 13; -fx-font-weight: BOLD; -fx-text-fill: #172554;"/>
+
+            <TextField fx:id="fullNameField"
+                       prefWidth="350.0"
+                       promptText="Enter your full name"
+                       style="-fx-background-color: #F8FAFC; -fx-border-color: #CBD5E1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;"/>
+
+            <Label text="Email Address"
+                   style="-fx-font-size: 13; -fx-font-weight: BOLD; -fx-text-fill: #172554;"/>
+
+            <TextField fx:id="emailField"
+                       prefWidth="350.0"
+                       promptText="Enter your email"
+                       style="-fx-background-color: #F8FAFC; -fx-border-color: #CBD5E1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;"/>
+
+            <Label text="Password"
+                   style="-fx-font-size: 13; -fx-font-weight: BOLD; -fx-text-fill: #172554;"/>
+
+            <PasswordField fx:id="passwordField"
+                           prefWidth="350.0"
+                           promptText="Enter your password"
+                           style="-fx-background-color: #F8FAFC; -fx-border-color: #CBD5E1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;"/>
+
+            <Label text="Confirm Password"
+                   style="-fx-font-size: 13; -fx-font-weight: BOLD; -fx-text-fill: #172554;"/>
+
+            <PasswordField fx:id="confirmPasswordField"
+                           prefWidth="350.0"
+                           promptText="Confirm your password"
+                           style="-fx-background-color: #F8FAFC; -fx-border-color: #CBD5E1; -fx-border-radius: 8; -fx-background-radius: 8; -fx-padding: 10;"/>
+
+            <Button fx:id="createAccountButton"
+                    mnemonicParsing="false"
+                    onAction="#handleCreateAccount"
+                    prefWidth="350.0"
+                    prefHeight="45.0"
+                    text="CREATE ACCOUNT"
+                    style="-fx-background-color: #2563EB; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 8; -fx-cursor: hand;"/>
+
+            <Label fx:id="loginLabel"
+                   onMouseClicked="#handleLogin"
+                   text="Already have an account? Login"
+                   textFill="#264deb"
+                   style="-fx-cursor: hand;"/>
+
+        </children>
+    </VBox>
+
+</children>
+
+
+</AnchorPane>
